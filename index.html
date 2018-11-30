@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Birthday Greeter</title>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/interface.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="container">
+      <h1>Hello There!</h1>
+      <br>
+      <form class="" action="index.html" method="post">
+        <p><h3>What is your name?</h3></p>
+        <input type="text" class="user_input" id="user_input" name="fname"><br>
+        <p><h3>When is your Birthday?</h3></p>
+        <input type="date" class="bday" name="bday" min="1979-12-31">
+        <br>
+        <br>
+        <input type="button" class="Button" value="Go">
+      </form>
+
+      <div class="txtDisplay">
+        <label>Happy Birthday</label>
+        <p><span id='display'></span></p>
+      </div>
+
+    </div>
+
+    <script src="src/interface.js"></script>
+    <script src="src/greeter.js"></script>
+  </body>
+</html>
